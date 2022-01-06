@@ -135,58 +135,67 @@ html {
 /*front face ends*/
 
 /*3 container boxes starts*/
-#three-forces-equipments-div{
-    margin-top: 23vh;
-}
-#indian-army-box{
-    margin-left: 15%;
-}
-#indian-army-box h1,#indian-airforce-box h1,#indian-navy-box h1{
-    text-align: center;
-    font-family: "poppins",sans-serif;
-    font-size: 2.1875em;
-    margin-top: 1.5vh;
-}
-#indian-army-box:hover,#indian-navy-box:hover,#indian-airforce-box:hover{
-    width: 350px;
-    height: 68.5vh;
+.service-category-boxes{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.background-box{
+.individual-service-boxes{
+    width: 22vw;
+    height: 66vh;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    justify-content: space-evenly;
     background-color: rgba(255, 255, 255,0.5);
-    box-shadow: 2px 2px 5px black;
-    width: 50vh;
-    height: 62vh;
-    border-radius:70px;
-    display: inline-block;
-    margin: 1.5vh;
-    transition: 0.3s;
-    transition-property: width,height;
+	box-shadow: 2px 2px 5px black;
+	transition: width 0.1s, height 0.2s;
+    overflow: hidden;
 }
-.background-box button{
+
+.individual-service-boxes:hover{
+    width: 24vw;
+    height: 68vh;
+}
+
+.individual-service-boxes h1{
+    text-align: center;
+    font-family: "poppins",sans-serif;
+	font-size: 2.1875em;
+	margin-top: 1.5vh;
+}
+
+.individual-service-boxes:nth-child(2) h1{
+    font-size: 2.1rem;
+}
+
+.explore-button{
     width: 40%;
-    height: 15%;
-    border-radius: 50px;
-    font-family:"roboto",sans-serif;
-    font-size: 1.25em;
-    border-style: none;
-    background-color: black;
-    color: white;
-    opacity: 0.5;
-    margin-left: 13vh;
+	height: 15%;
+	border-radius: 50px;
+	font-family:"roboto",sans-serif;
+	font-size: 1.3rem;
+    font-weight: bolder;
+	border-style: none;
+	background-color: black;
+	cursor: pointer;
+	opacity: 0.5;
+    text-align: center;
+    padding: 15px 0;
+    
 }
-.background-box button a{
+.explore-button a{
+    color: white;
     text-decoration: none;
-    color: white;
 }
-.background-box button:hover{
+
+.explore-button:hover{
     opacity:1;
-}
-.forces-logo{
-    width: 70%;
-    height: auto;
-    margin-left: 7.6vh;
-    margin-top: 3vh;
 }
 
 /*3 container boxes ends*/
