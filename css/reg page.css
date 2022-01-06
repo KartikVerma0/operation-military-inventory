@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+/*header starts*/
+.navbar{
+    background-color: black;
+    height: 12vh;
+    width: 100%;
+}
+
+.navbar ul{
+    float:right;
+    list-style: none;
+}
+
+.navbar ul li{
+    display: inline-block;
+    line-height:  12vh; 
+    margin:0 0.30vw ;
+    text-decoration: none;
+}
+
+.navbar ul li a{
+    color: white;
+    font-size: 1.063rem;
+    font-family: "roboto",sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover{
+    background: grey;
+    transition: .5s;
+}
+
+.image{
+    width: 15vw;
+    height: auto;
+    float: left;
+    padding: 0 0.45vw;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-family: "bakbak one",sans-serif;
+    line-height: 12vh;
+    display: inline-block;
+    padding-left: 1.5vw;
+    background: -webkit-linear-gradient(#ff105f, #ffad06);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sign{
+    float: right;   
+    margin: 0px 1vw;
+
+}
+
+.sign-button{
+    color: black;
+    background: linear-gradient(#ff105f,#ffad06);
+    padding: 0vh 1.5vw;
+    border-radius: 50px;
+    border-style: none;
+    padding-bottom: 0vh;
+    padding-top: 0.65vh;
+    margin-top: 2.5vh;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "bebas neue",sans-serif;
+}
+
+/*header ends*/
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+    url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+}
+
+
+.togglebtn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: white;
+
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(#ff105f,#ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+
+}
+.social-icons-login{
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+.social-icons-login img{
+    width: 30px;
+    margin: 0 12px;
+    box-shadow: 0 0 12px 0 #7f7f7f3d;
+    cursor: pointer;
+    border-radius: 15px;
+   
+}
+
+.input-group{
+    top: 180px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0px;
+    margin: 5px;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border: 0;
+    border-radius: 30px;
+}
+
+.checkbox{
+    margin: 30px 10px 30px 0;
+}
+
+span{
+    color: #777;
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login{
+    left: 50px;
+}
+#register{
+    left: 450px;
+}
+
+/*footer starts*/
+
+
+#footer-box{
+    width: 100%;
+    height: 55.272451vh;
+    background-color: black;
+    margin-top: 100vh;
+}
+#footer-table{
+    border-bottom: 1px solid white;
+    width: 90%;
+}
+
+.margin-left{
+    margin-left: 14.08828vh;
+}
+.margin-right{
+    margin-right:14.08828vh ;
+}
+#logo{
+    margin-right: 45%;
+}
+#footer-description{
+    width: 70%;
+    text-align: justify;
+    font-family: "roboto",sans-serif;
+    color: white;
+}
+.footer-list{
+    list-style-type: none;
+}
+
+.footer-list .social-icons{
+    margin-top: 1.5220700152207vh;
+    display: inline-block;
+}
+
+.footer-heading-align{
+    text-align: center;
+}
+
+#form form{
+    padding-bottom: 2.283105022831vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+#form form input{
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+#form form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+#footer-end-note{
+    text-align: center;
+    padding-top: 1.5220700152207vh;
+    font-family: roboto,sans-serif;
+}
+.footer-heading-style{
+    font-family:"Bebas Neue",sans-serif;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.footer-heading-style a{
+    text-decoration: none;
+    color: white;
+    font-family: "Bebas Neue",sans-serif;
+}
+.list-item-style{
+    font-family: roboto,sans-serif;
+        color: white;
+}
+.list-item-style a{
+    text-decoration: none;
+    color: white;
+    font-family: roboto,sans-serif;
+}
+
+#footer-end-note p{
+    color: white;
+    font-family: roboto,sans-serif;
+}
+
+#footer-end-note img{
+    width: 15px;
+}
+
+/*footer ends*/

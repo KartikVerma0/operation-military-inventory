@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*nav bar starts*/
+#nav_bar{
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+	border-spacing: 0;
+}
+#logo-nav-bar{
+	position: relative;
+	left: 2vw;
+	width: 12vw;
+	height: auto;
+}
+#op-logo{
+	margin-left: 3vw;
+    background-color: transparent;
+    border-style: none;
+    display: block;
+    font-family: "Bakbak one",sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+#home-button,#contact,#feedback{
+	margin-left: 0.5vw;
+    background-color: transparent;
+    border-style: none;
+    display: block;
+}
+#home-button a,#contact a,#feedback a{
+	color: white;
+}
+
+#nav_bar a{
+	text-decoration: none;
+	font-family: "roboto",sans-serif;
+	font-size: 20px;
+}
+#signin{
+	margin-left: 0.5vw;
+	width: 10vw;
+	height: 8vh;
+	border-style:none;
+	border-radius: 50px;
+	background-color: #eae93d;
+	color: black;
+	opacity: 1;
+
+}
+#signin:hover{
+	opacity: 0.9;
+}
+#signin a{
+	color: black;
+	font-weight: bold;
+	font-family: "poppins",sans-serif;
+}
+/*nav bar ends*/
+.individual-description-odd{
+	margin-top: 20vh;
+	width: 16.35vw;
+	margin-left: 20vh;
+}
+
+.individual-description-odd h1{
+	font-family:"poppins",sans-serif;
+	font-size:500;
+	color: black;
+}
+
+.individual-description-odd h3{
+	font-family:"poppins",sans-serif;
+	font-size:300;
+	font-weight: normal;
+	color: #505050;
+}
+
+.individual-description-odd p{
+	font-family:"poppins",sans-serif;
+	font-size:200;
+	font-weight: lighter;
+	color: #777777;
+}
+
+.members-photos-odd img{
+	width: 40%;
+	height: auto;
+	position: relative;
+	margin-top: 20vh;
+	margin-left: 50vh;
+	margin-right: 21.6vh;
+}
+
+.individual-description-even{
+	margin-top: 20vh;
+	margin-right: 40vh;
+	width: 20vw;
+}
+
+.individual-description-even h1{
+	font-family:"poppins",sans-serif;
+	font-size:500;
+	color: black;
+}
+
+.individual-description-even h3{
+	font-family:"poppins",sans-serif;
+	font-size:300;
+	font-weight: normal;
+	color: #505050;
+}
+
+.individual-description-even p{
+	font-family:"poppins",sans-serif;
+	font-size:200;
+	font-weight: lighter;
+	color: #777777;
+}
+.members-photos-even img{
+	width: 50%;
+	height: auto;
+	position: relative;
+	margin-top: 20vh;
+	margin-left: 21.6vh;
+	margin-right: 50vh;
+}
+
+
+
+
+
+
+
+
+/*footer starts*/
+
+body{
+	color: white;
+	font-size: 100%;
+}
+#footer-box{
+	width: 100%;
+	height: 55.272450532725vh;
+	background-color: black;
+	border-top-left-radius: 15.220700152207vh;
+	position: bottom;
+	margin-top: 50vh;
+}
+#footer-table{
+	border-bottom: 1px solid white;
+	width: 90%;
+}
+
+.margin-left{
+	margin-left: 14.08828vh;
+}
+.margin-right{
+	margin-right:14.08828vh ;
+}
+#logo{
+	margin-right: 45%;
+}
+#footer-description{
+	width: 70%;
+	text-align: justify;
+	font-family: "roboto",sans-serif;
+}
+.footer-list{
+	list-style-type: none;
+}
+
+.footer-heading-align{
+	text-align: center;
+}
+
+#form form{
+	padding-bottom: 2.283105022831vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid #ccc;
+}
+
+#form form input{
+	background: transparent;
+	color: #ccc;
+	border: 0;
+	outline: none;
+}
+#form form button{
+	background: transparent;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+}
+
+.social-icons{
+	margin-top: 1.5220700152207vh;
+	display: inline-block;
+}
+#footer-end-note{
+	text-align: center;
+	padding-top: 1.5220700152207vh;
+	font-family: roboto,sans-serif;
+}
+.footer-heading-style{
+	font-family:"Bebas Neue",sans-serif;
+	letter-spacing: 2px;
+
+}
+
+.footer-heading-style a{
+	text-decoration: none;
+	color: white;
+}
+.list-item-style{
+	font-family: roboto,sans-serif;
+}
+.list-item-style a{
+	text-decoration: none;
+	color: white;
+}
+
+/*footer ends*/

@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@100&display=swap');
+
+@font-face {
+    font-family: bahnschriftsemilightcondensed ;
+    src: url(/Bahnschrift-Font-Family/BAHNSCHRIFT.TTF);
+    }
+
+*{    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+
+html {
+  scroll-behavior: smooth;
+}
+/*front face starts*/
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(../images/home-page-bg.jpg);        
+    background-size: cover;
+    background-position: center;
+    padding: 0 8%;
+    position: relative;
+}
+
+.textbox{
+    color: rgba(255, 0, 0, 0.815);
+    position: absolute;
+    bottom: 8%;
+    left: 50px;
+    
+}
+
+.textbox p{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.textbox h1{
+    font-family: "bahnschriftsemilightcondensed",sans-serif;
+    font-size: 80px;
+    line-height: 70px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url(../images/back.png);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+
+@keyframes back {
+    100%{
+        background-position: 2000px 0
+    }
+
+}
+
+.textbox h3{
+    font-size: 40px;
+    font-weight: 400;
+    font-family: "roboto",sans-serif;
+}
+
+.explorebutton .btn{
+    width: 150px;
+    height: 75px;
+    background-color: red;
+    border-radius: 50px;
+    border-style: none;
+    margin-top: 20px;
+    display: block;
+    cursor: pointer;
+}
+
+.explorebutton .btn:hover{
+    background-color: #d50000;
+}
+
+.explorebutton .btn a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    font-family: "poppins",sans-serif;
+}
+
+.nav_bar{
+    position: absolute;
+    top: 2%;
+    left: 30%;
+
+}
+
+.nav_bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "poppins",sans-serif;
+    padding-right: 20px;
+}
+
+.nav_bar a:hover{
+    color: red;
+}
+
+
+.nav_bar button{
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50px;
+    border-style: none;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.nav_bar button p{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    font-family: "poppins",sans-serif;
+}
+
+.nav_bar button:hover{
+    background-color:rgba(255, 0, 0, 0.8);
+}
+
+/*front face ends*/
+
+/*3 container boxes starts*/
+#three-forces-equipments-div{
+    margin-top: 23vh;
+}
+#indian-army-box{
+    margin-left: 15%;
+}
+#indian-army-box h1,#indian-airforce-box h1,#indian-navy-box h1{
+    text-align: center;
+    font-family: "poppins",sans-serif;
+    font-size: 2.1875em;
+    margin-top: 1.5vh;
+}
+#indian-army-box:hover,#indian-navy-box:hover,#indian-airforce-box:hover{
+    width: 350px;
+    height: 68.5vh;
+}
+
+.background-box{
+    background-color: rgba(255, 255, 255,0.5);
+    box-shadow: 2px 2px 5px black;
+    width: 50vh;
+    height: 62vh;
+    border-radius:70px;
+    display: inline-block;
+    margin: 1.5vh;
+    transition: 0.3s;
+    transition-property: width,height;
+}
+.background-box button{
+    width: 40%;
+    height: 15%;
+    border-radius: 50px;
+    font-family:"roboto",sans-serif;
+    font-size: 1.25em;
+    border-style: none;
+    background-color: black;
+    color: white;
+    opacity: 0.5;
+    margin-left: 13vh;
+}
+.background-box button a{
+    text-decoration: none;
+    color: white;
+}
+.background-box button:hover{
+    opacity:1;
+}
+.forces-logo{
+    width: 70%;
+    height: auto;
+    margin-left: 7.6vh;
+    margin-top: 3vh;
+}
+
+/*3 container boxes ends*/
+
+/*footer starts*/
+
+
+#footer-box{
+    width: 100%;
+    height: 55.272450532725vh;
+    background-color: black;
+    border-top-left-radius: 15.220700152207vh;
+    position: bottom;
+    margin-top: 30vh;
+    color: white;
+}
+#footer-table{
+    border-bottom: 1px solid white;
+    width: 90%;
+}
+
+.margin-left{
+    margin-left: 14.08828vh;
+}
+.margin-right{
+    margin-right:14.08828vh ;
+}
+#logo{
+    margin-right: 45%;
+}
+#footer-description{
+    width: 70%;
+    text-align: justify;
+    font-family: "roboto",sans-serif;
+    font-weight: 100;
+}
+.footer-list{
+    list-style-type: none;
+}
+
+.footer-heading-align{
+    text-align: center;
+}
+
+#form form{
+    padding-bottom: 2.283105022831vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+}
+
+#form form input{
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+#form form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.social-icons{
+    margin-top: 1.5220700152207vh;
+    display: inline-block;
+}
+#footer-end-note{
+    text-align: center;
+    padding-top: 1.5220700152207vh;
+    font-family: roboto,sans-serif;
+}
+.footer-heading-style{
+    font-family:"Bebas Neue",sans-serif;
+    letter-spacing: 2px;
+
+}
+
+.footer-heading-style a{
+    text-decoration: none;
+    color: white;
+}
+.list-item-style{
+    font-family: "roboto",sans-serif;
+    font-weight: 100;
+}
+.list-item-style a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#footer-end-note p{
+    font-weight: 100;
+}
+#footer-end-note img{
+    width: 15px;
+}
+
+/*footer ends*/
