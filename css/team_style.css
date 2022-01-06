@@ -95,8 +95,6 @@
 }
 
 .members-photos-odd img{
-	width: 40%;
-	height: auto;
 	position: relative;
 	margin-top: 20vh;
 	margin-left: 50vh;
@@ -129,8 +127,6 @@
 	color: #777777;
 }
 .members-photos-even img{
-	width: 50%;
-	height: auto;
 	position: relative;
 	margin-top: 20vh;
 	margin-left: 21.6vh;
