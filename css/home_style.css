@@ -1,10 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@100&display=swap');
 
+@media screen and (max-width:600px) {
+    :root{
+        font-size:12px;
+    }
+    
+    .footer-description-section{
+        min-width: 100vw;
+    }
+    .footer-description{
+        width: 70%;
+    }
+    .team-section{
+        width: 50%;
+    }
+    .links-section{
+        width: 50%S;
+    }
+    .newsletter-section{
+        width: 100%;
+    }
+}
 *{    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    }
+}
 
 html {
   scroll-behavior: smooth;
@@ -17,7 +38,6 @@ html {
     background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(../images/home-page-bg.jpg);        
     background-size: cover;
     background-position: center;
-    padding: 0 8%;
     position: relative;
 }
 
@@ -30,14 +50,14 @@ html {
 }
 
 .textbox p{
-    font-size: 50px;
+    font-size: 3.125rem;
     font-weight: 600;
     font-family: sans-serif;
 }
 
 .textbox h1{
     font-family:sans-serif;
-    font-size: 80px;
+    font-size: 5rem;
     line-height: 70px;
     color: transparent;
     -webkit-text-stroke: 1px white;
@@ -56,14 +76,14 @@ html {
 }
 
 .textbox h3{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 400;
     font-family: "roboto",sans-serif;
 }
 
 .explorebutton .btn{
-    width: 150px;
-    height: 75px;
+    width: 9.375rem;
+    height: 4.688rem;
     background-color: red;
     border-radius: 50px;
     border-style: none;
@@ -79,24 +99,28 @@ html {
 .explorebutton .btn a{
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.875rem;
     display: block;
     font-family: "poppins",sans-serif;
 }
 
-.nav_bar{
-    position: absolute;
-    top: 2%;
-    left: 30%;
+/* nav bar starts */
 
+.nav_bar{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .nav_bar a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "poppins",sans-serif;
-    padding-right: 20px;
 }
 
 .nav_bar a:hover{
@@ -105,19 +129,18 @@ html {
 
 
 .nav_bar button{
-    width: 100px;
-    height: 50px;
+    width: 6.25rem;
+    height: 3.125rem;
     background-color: red;
     border-radius: 50px;
     border-style: none;
-    margin-top: 20px;
     cursor: pointer;
 }
 
 .nav_bar button p{
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
     display: block;
     font-family: "poppins",sans-serif;
@@ -127,20 +150,31 @@ html {
     background-color:rgba(255, 0, 0, 0.8);
 }
 
+/* nav bar ends */
+
 /*front face ends*/
 
+
+
 /*3 container boxes starts*/
+
 .service-category-boxes{
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     justify-content: space-evenly;
     align-items: center;
+    overflow-y: scroll;
+    padding: 1rem;
+    margin: 1rem 0;
 }
 
+
+
 .individual-service-boxes{
-    width: 22vw;
-    height: 66vh;
+    width: max(250px,22vw);
     border-radius: 4rem;
     display: flex;
     flex-direction: column;
@@ -148,14 +182,13 @@ html {
     padding: 1.5rem;
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255,0.5);
-	box-shadow: 2px 2px 5px black;
-	transition: width 0.1s, height 0.2s;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	transition: width 0.2s, height 0.4s;
     overflow: hidden;
 }
 
 .individual-service-boxes:hover{
-    width: 24vw;
-    height: 68vh;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
 }
 
 .individual-service-boxes h1{
@@ -170,9 +203,9 @@ html {
 }
 
 .explore-button{
-    width: 40%;
-	height: 15%;
-	border-radius: 50px;
+    width: min(40%,10rem);
+	height: max-content;
+	border-radius: 2rem;
 	font-family:"roboto",sans-serif;
 	font-size: 1.3rem;
     font-weight: bolder;
@@ -198,98 +231,165 @@ html {
 /*footer starts*/
 
 
-#footer-box{
+.footer-box{
     width: 100%;
-    height: 55.272450532725vh;
+    height: max-content;
+    overflow: hidden;
     background-color: black;
-    border-top-left-radius: 15.220700152207vh;
-    position: bottom;
-    margin-top: 30vh;
     color: white;
-}
-#footer-table{
-    border-bottom: 1px solid white;
-    width: 90%;
+    border-top-left-radius: 100px;
+    position: relative;
+    bottom: 0;
+
 }
 
-.margin-left{
-    margin-left: 14.08828vh;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem;
 }
-.margin-right{
-    margin-right:14.08828vh ;
+
+.flex-item{
+    text-align: justify;
 }
-#logo{
-    margin-right: 45%;
+
+
+.footer-description-section{
+    width: 50%;/* width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#footer-description{
-    width: 70%;
+
+.footer-description-section img{
+    width: 15rem;
+}
+
+.footer-description{
     text-align: justify;
     font-family: "roboto",sans-serif;
-    font-weight: 100;
+    font-weight: lighter;
 }
-.footer-list{
+
+.team-section{
+    /* width */
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.team-section h2{
+    margin-bottom: 4rem;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.team-section h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.team-section ul{
+    list-style-type: none;
+    list-style-position: inside;
+    /* border: 3px solid white; */
+}
+
+.team-section li{
+    margin: 0px 0px 20px 0px;
+    /* border: 3px solid aqua; */
+}
+
+.links-section{
+    /* width */
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.links-section h2{
+    margin-bottom: 4rem; 
+}
+
+.links-section ul{
     list-style-type: none;
 }
 
-.footer-heading-align{
-    text-align: center;
+.links-section li{
+    margin: 0px 0px 20px 0px;
 }
 
-#form form{
-    padding-bottom: 2.283105022831vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+.links-section li a{
+    text-decoration: none;
+    color: white;
+}
+.newsletter-section{
+    /* width */
+    flex-grow: 0.5;
+    flex-shrink: 0;
 }
 
-#form form input{
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
+.newsletter-section h2{
+    margin-bottom: 4rem; 
 }
-#form form button{
-    background: transparent;
-    border: 0;
-    outline: none;
+
+.newsletter-section form input[type=email]{
+    background-color: transparent;
+    border-style: none;
+    width: 50%;
+    height: 1.5rem;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+    color: grey;
+}
+
+.newsletter-section form input[type=email]:focus{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.newsletter-section form button{
+    background-color: transparent;
+    border-style: none;
     cursor: pointer;
 }
 
-.social-icons{
-    margin-top: 1.5220700152207vh;
-    display: inline-block;
+.newsletter-section .social-icons{
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
 }
-#footer-end-note{
+
+
+.footer-box .footer-note{
     text-align: center;
-    padding-top: 1.5220700152207vh;
-    font-family: roboto,sans-serif;
-}
-.footer-heading-style{
-    font-family:"Bebas Neue",sans-serif;
-    letter-spacing: 2px;
-
 }
 
-.footer-heading-style a{
-    text-decoration: none;
-    color: white;
-}
-.list-item-style{
+.footer-note p{
     font-family: "roboto",sans-serif;
-    font-weight: 100;
-}
-.list-item-style a{
-    text-decoration: none;
-    color: white;
+    font-weight: lighter;
 }
 
 
-#footer-end-note p{
-    font-weight: 100;
+
+.team-member-name li{
+    font-family: "roboto",sans-serif;
+    font-weight: lighter;
 }
-#footer-end-note img{
-    width: 15px;
+
+.links-list li{
+    font-family: "roboto",sans-serif;
+    font-weight: lighter;
+}
+
+.flex-item h2{
+    font-family: "Bebas Neue",sans-serif;
+    letter-spacing: 2px;
 }
 
 /*footer ends*/
