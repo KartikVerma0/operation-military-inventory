@@ -49,7 +49,7 @@ img{
 /*--header starts---*/
 header{
     min-height: 100vh;
-    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/indian.png) center/cover no-repeat fixed;
+    background:url(../images/indian.jpg) center/cover no-repeat fixed;
 }
 
 .navbar{
