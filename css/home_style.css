@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@100&display=swap');
 
-@media screen and (max-width:600px) {
+@media (max-width:600px) {
     :root{
         font-size:12px;
     }
@@ -21,7 +21,18 @@
     .newsletter-section{
         width: 100%;
     }
+    .container{
+        background-image: url(../images/home-mobile-bg1.jpg);
+    }
 }
+
+@media (min-width:600px){
+    .container{
+        background-image: url(../images/home-page-bg.jpg);
+    }
+    
+}
+
 *{    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -35,7 +46,6 @@ html {
 .container{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(../images/home-page-bg.jpg);        
     background-size: cover;
     background-position: center;
     position: relative;
@@ -43,9 +53,7 @@ html {
 
 .textbox{
     color: rgba(255, 0, 0, 0.815);
-    position: absolute;
-    bottom: 8%;
-    left: 50px;
+    margin: 8rem 0 0 3.125rem;
     
 }
 
