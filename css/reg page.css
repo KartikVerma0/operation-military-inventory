@@ -36,8 +36,7 @@
 }
 
 body{
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
-    url(../images/banner.jpg);
+    background-image:url(../images/banner.jpg);
     background-position: center;
     background-size: cover;
     font-family: sans-serif;
