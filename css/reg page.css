@@ -336,15 +336,18 @@ body{
 }
 
 
-
+.newsletter-section form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 .newsletter-section form input[type=email]{
     background-color: transparent;
     border-style: none;
-    width: 50%;
+    width: fit-content;
     height: 1.5rem;
-    margin-top: 10px;
     border-bottom: 1px solid grey;
     color: grey;
 }
