@@ -182,8 +182,8 @@ html {
     padding: 1.5rem;
     justify-content: space-evenly;
     background-color: rgba(255, 255, 255,0.5);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    transition: width 0.2s, height 0.4s;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+	transition: width 0.2s, height 0.4s;
     overflow: hidden;
 }
 
@@ -283,7 +283,6 @@ html {
 }
 
 .team-section h2{
-    margin-bottom: 4rem;
     text-decoration: none;
     color: white;
 }
@@ -302,8 +301,7 @@ html {
 }
 
 .team-section li{
-    margin: 0px 0px 20px 0px;
-    /* border: 3px solid aqua; */
+    margin-top: 0.7rem;
 }
 
 .links-section{
@@ -312,16 +310,13 @@ html {
     flex-shrink: 0;
 }
 
-.links-section h2{
-    margin-bottom: 4rem; 
-}
 
 .links-section ul{
     list-style-type: none;
 }
 
 .links-section li{
-    margin: 0px 0px 20px 0px;
+    margin-top: 0.7rem;
 }
 
 .links-section li a{
@@ -334,8 +329,10 @@ html {
     flex-shrink: 0;
 }
 
-.newsletter-section h2{
-    margin-bottom: 4rem; 
+
+
+.newsletter-section form{
+    margin-top: 0.7rem;
 }
 
 .newsletter-section form input[type=email]{
