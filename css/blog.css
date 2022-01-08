@@ -3,6 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 
+@media (max-width:600px) {
+    :root{
+        font-size:12px;
+    }
+    
+    .footer-description-section{
+        min-width: 100%;
+    }
+    .footer-description{
+        width: 70%;
+    }
+    .team-section{
+        width: 50%;
+    }
+    .links-section{
+        width: 50%S;
+    }
+    .newsletter-section{
+        width: 100%;
+    }
+    .newsletter-section form input[type=email]{
+        width: 100%;
+    }
+
+}
 
 *{
     margin: 0vh;
@@ -53,38 +78,42 @@ header{
 }
 
 .navbar-nav{
-    padding: 0.8rem 0 0.2rem 0;
     text-align: center;
-    display: inline;
+    display: flex;
     width: 100%;
-    margin-left: 32vw;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
 }
 
 .navbar-nav a{
     font-family: "roboto",sans-serif;
     color: rgb(255, 30, 0);
-    display: inline-block;
-    margin-top: 15px;
     letter-spacing: 3px;
     text-decoration: none;
-    margin-left: 1rem;
     
     
 }
 
+.sign-in-div{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .navbar button{
-    vertical-align: top;
-    float: right;
-    margin-top: 20px;
-    height: 50px;
-    width: 95px;
-    border-radius: 50px;
+    height: 3.125rem;
+    width: 5.938rem;
+    border-radius: 3.125rem;
     border-style: none;
     background-color: whitesmoke;
     color: black;
     font-size: 1.2rem;
     cursor: pointer;
+    font-family: "poppins",sans-serif;
+    font-weight: bolder;
 }
 
 .navbar button:hover{
@@ -130,10 +159,8 @@ header{
     background-color: #00d7d7;
 }
 
-.sign-in{
-    font-family: "poppins",sans-serif;
-    font-weight: bolder;
-}
+
+
 .banner{
     align-items: center;
     justify-content: center;
@@ -178,6 +205,8 @@ header{
 .design-item{
     width: 90%;
     border-bottom: 2px solid grey;
+    display: flex;
+    gap: 3.5rem;
 }
 
 .design-img{
@@ -193,8 +222,7 @@ header{
 }
 
 .headline{
-    margin: 5%;
-    width: 20%;
+    width: 30%;
     display: inline-block;
 }
 
@@ -203,6 +231,8 @@ header{
     text-decoration: none;
     font-family: "Montserrat",sans-serif;
     display: block;
+    font-size: 1.2rem;
+    word-break: break-word;
 }
 
 .headline a:hover{
