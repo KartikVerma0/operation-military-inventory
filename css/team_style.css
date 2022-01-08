@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@900&display=swap');
+
+@media (max-width:600px) {
+    :root{
+        font-size:12px;
+    }
+    
+    .footer-description-section{
+        min-width: 100%;
+    }
+    .footer-description{
+        width: 70%;
+    }
+    .team-section{
+        width: 50%;
+    }
+    .links-section{
+        width: 50%S;
+    }
+    .newsletter-section{
+        width: 100%;
+    }
+    .newsletter-section form input[type=email]{
+        width: 100%;
+    }
+}
 
 *{
 	margin: 0;
@@ -9,129 +36,197 @@
 }
 
 /*nav bar starts*/
-#nav_bar{
-	background-color: black;
-	width: 100%;
-	height: 50px;
-	position: fixed;
-	top: 0px;
-	z-index: 1;
-	border-spacing: 0;
+.navbar{
+    background-color: black;
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem 0
 }
-#logo-nav-bar{
-	position: relative;
-	left: 2vw;
-	width: 12vw;
+
+.nav-image{
+    width: 8rem;
+    height: auto;
+    float: left;
+    
+}
+
+.nav-logo{
+    font-size: 2.5rem;
+    font-family: "bakbak one",sans-serif;
+    color: white;
+    width: max-content;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.nav-links a{
+    color: white;
+    font-size: 1.063rem;
+    font-family: "roboto",sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.nav-links>a:hover{
+    color: rgba(255, 255, 0, 0.8);
+}
+
+
+
+.sign-button{
+    background-color:yellow;
+    color: black;
+    border-radius: 3.125rem;
+    border-style: none;
+    padding-top: 0.2rem;
+    cursor: pointer;
+    width: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-button:hover{
+    background-color: rgba(255, 255, 0, 0.8);
+}
+
+.sign-button h3{
+    color: black;
+    font-size: 2rem;
+    font-family: "Bebas Neue",sans-serif;
+    font-weight: lighter;
+}
+
+/*nav bar ends*/
+
+/* main starts */
+
+
+
+.team-members{
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	margin: 5rem auto;
+	gap: 4rem;
+}
+
+.member-section-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.member-section-title h1{
+	color: rgba(255, 255, 0, 0.9);
+	font-family: "Be Vietnam Pro",sans-serif;
+	text-align: center;
+	font-size: 5rem;
+	font-weight: 900;
+	text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.individual-member{
+	display: flex;
+	gap: 4rem;
+	align-items: center;
+}
+
+.individual-member>*{
+	width: 50%;
+}
+
+.individual-member h1{
+	font-family:"poppins",sans-serif;
+	font-size:2rem;
+	color: black;
+}
+
+.individual-member h3{
+	font-family:"poppins",sans-serif;
+	font-size: 1.125rem;
+	font-weight: normal;
+	color: #505050;
+}
+
+.individual-member p{
+	font-family:"poppins",sans-serif;
+	font-weight: lighter;
+	color: #777777;
+	font-size: 1rem;
+}
+
+.text-right-align{
+	text-align: right;
+}
+
+.text-left-align{
+	text-align: left;
+}
+
+.social-icon-list{
+	list-style: none;
+}
+
+.social-icon-list li{
+	display: inline-block;
+}
+
+.social-icon-list img{
+	width: 2rem;
+}
+
+.members-photos{
+	display: flex;
+	justify-content: center;
+}
+
+.members-photos img{
+	width: 50%;
 	height: auto;
 }
-#op-logo{
-	margin-left: 3vw;
-    background-color: transparent;
-    border-style: none;
-    display: block;
-    font-family: "Bakbak one",sans-serif;
-    font-size: 40px;
-    letter-spacing: 1px;
-}
-#home-button,#contact,#feedback{
-	margin-left: 0.5vw;
-    background-color: transparent;
-    border-style: none;
-    display: block;
-}
-#home-button a,#contact a,#feedback a{
-	color: white;
+
+.leader-photo img{
+	width: 60%;
+	height: auto;
 }
 
-#nav_bar a{
-	text-decoration: none;
-	font-family: "roboto",sans-serif;
-	font-size: 20px;
-}
-#signin{
-	margin-left: 0.5vw;
-	width: 10vw;
-	height: 8vh;
-	border-style:none;
-	border-radius: 50px;
-	background-color: #eae93d;
-	color: black;
-	opacity: 1;
-
-}
-#signin:hover{
-	opacity: 0.9;
-}
-#signin a{
-	color: black;
-	font-weight: bold;
-	font-family: "poppins",sans-serif;
-}
-/*nav bar ends*/
-.individual-description-odd{
-	margin-top: 20vh;
-	width: 16.35vw;
-	margin-left: 20vh;
+.member-description:nth-child(2n-1){
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
 
-.individual-description-odd h1{
-	font-family:"poppins",sans-serif;
-	font-size:500;
-	color: black;
+.member-description:nth-child(2n){
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 }
 
-.individual-description-odd h3{
-	font-family:"poppins",sans-serif;
-	font-size:300;
-	font-weight: normal;
-	color: #505050;
-}
 
-.individual-description-odd p{
-	font-family:"poppins",sans-serif;
-	font-size:200;
-	font-weight: lighter;
-	color: #777777;
-}
 
-.members-photos-odd img{
-	position: relative;
-	margin-top: 20vh;
-	margin-left: 50vh;
-	margin-right: 21.6vh;
-}
 
-.individual-description-even{
-	margin-top: 20vh;
-	margin-right: 40vh;
-	width: 20vw;
-}
 
-.individual-description-even h1{
-	font-family:"poppins",sans-serif;
-	font-size:500;
-	color: black;
-}
 
-.individual-description-even h3{
-	font-family:"poppins",sans-serif;
-	font-size:300;
-	font-weight: normal;
-	color: #505050;
-}
 
-.individual-description-even p{
-	font-family:"poppins",sans-serif;
-	font-size:200;
-	font-weight: lighter;
-	color: #777777;
-}
-.members-photos-even img{
-	position: relative;
-	margin-top: 20vh;
-	margin-left: 21.6vh;
-	margin-right: 50vh;
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -141,92 +236,162 @@
 
 
 /*footer starts*/
-
-body{
-	color: white;
-	font-size: 100%;
-}
-#footer-box{
-	width: 100%;
-	height: 55.272450532725vh;
-	background-color: black;
-	border-top-left-radius: 15.220700152207vh;
-	position: bottom;
-	margin-top: 50vh;
-}
-#footer-table{
-	border-bottom: 1px solid white;
-	width: 90%;
-}
-
-.margin-left{
-	margin-left: 14.08828vh;
-}
-.margin-right{
-	margin-right:14.08828vh ;
-}
-#logo{
-	margin-right: 45%;
-}
-#footer-description{
-	width: 70%;
-	text-align: justify;
-	font-family: "roboto",sans-serif;
-}
-.footer-list{
-	list-style-type: none;
-}
-
-.footer-heading-align{
-	text-align: center;
-}
-
-#form form{
-	padding-bottom: 2.283105022831vh;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: 1px solid #ccc;
-}
-
-#form form input{
-	background: transparent;
-	color: #ccc;
-	border: 0;
-	outline: none;
-}
-#form form button{
-	background: transparent;
-	border: 0;
-	outline: none;
-	cursor: pointer;
-}
-
-.social-icons{
-	margin-top: 1.5220700152207vh;
-	display: inline-block;
-}
-#footer-end-note{
-	text-align: center;
-	padding-top: 1.5220700152207vh;
-	font-family: roboto,sans-serif;
-}
-.footer-heading-style{
-	font-family:"Bebas Neue",sans-serif;
-	letter-spacing: 2px;
+.footer-box{
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 100px;
+    position: relative;
+    bottom: 0;
 
 }
 
-.footer-heading-style a{
-	text-decoration: none;
-	color: white;
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem;
 }
-.list-item-style{
-	font-family: roboto,sans-serif;
+
+.flex-item{
+    text-align: justify;
 }
-.list-item-style a{
-	text-decoration: none;
-	color: white;
+
+
+.footer-description-section{
+    width: 50%;/* width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-description-section img{
+    width: 15rem;
+}
+
+.footer-description{
+    text-align: justify;
+    font-family: "roboto",sans-serif;
+    font-weight: lighter;
+    width: 100%;
+}
+
+.team-section{
+    width: min-content;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.team-section h2{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.team-section h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+.team-section ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.team-section li{
+    margin-top: 0.7rem;
+}
+
+.links-section{
+    width: min-content;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+
+.links-section ul{
+    list-style-type: none;
+}
+
+.links-section li{
+    margin-top: 0.7rem;
+}
+
+.links-section li a{
+    text-decoration: none;
+    color: white;
+}
+.newsletter-section{
+    width: max-content;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+
+
+
+
+.newsletter-section form input[type=email]{
+    background-color: transparent;
+    border-style: none;
+    width: 50%;
+    height: 1.5rem;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+    color: grey;
+}
+
+.newsletter-section form input[type=email]:focus{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.newsletter-section form button{
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.newsletter-section .social-icons img{
+    cursor: pointer;
+}
+
+
+.footer-box .footer-note{
+    text-align: center;
+}
+
+.footer-note p{
+    font-family: "roboto",sans-serif;
+    font-weight: lighter;
+}
+
+
+
+.team-member-name li{
+    font-family: "roboto",sans-serif;
+    font-weight: lighter;
+}
+
+.links-list li{
+    font-family: "roboto",sans-serif;
+    font-weight: lighter;
+}
+
+.flex-item h2{
+    font-family: "Bebas Neue",sans-serif;
+    letter-spacing: 2px;
 }
 
 /*footer ends*/
