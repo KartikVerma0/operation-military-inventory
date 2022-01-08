@@ -107,10 +107,11 @@ body{
     align-items: center;
 }
 
-.sign-button a{
+.sign-button h5{
     color: black;
     font-size: 2rem;
     font-family: "Bebas Neue",sans-serif;
+    font-weight: lighter;
 }
 
 /*header ends*/
