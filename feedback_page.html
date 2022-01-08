@@ -9,17 +9,17 @@
 </head>
 <body>
 	<div class="navbar">
-        <a href="index.html"><img src="images/page_logo2.png" alt="LOGO" class="image" title="Operation Military Inventory"></a>
-        <p class="logo">OP MILITARY INVENTORY</p>
-        <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="blog.html">BLOG</a></li>
-            <li><a href="page.html">CONTACT US</a></li>
-            <div class="sign">
-                <a href="reg page.html"><button class="sign-button">SIGN IN</button></a>
-            </div>
-        </ul>
+        <a href="index.html"><img src="images/page_logo2.png" alt="LOGO" class="nav-image" title="Operation Military Inventory"></a>
+        <p class="nav-logo">OP MILITARY INVENTORY</p>
+        <div class="nav-links">
+            <a href="index.html">HOME</a>
+            <a href="blog.html">BLOG</a>
+            <a href="feedback_page.html">FEEDBACK</a>
+            <a href="page.html">CONTACT US</a>
+            <div class="sign-button"><a href="reg page.html"><h3>SIGN IN</h3></a></div>
+        </div>
     </div>
+
 	<div id="feedback-box">
 		<h1>FEEDBACK FORM</h1>
 		<form>
@@ -41,62 +41,68 @@
 				<input type="submit" name="submit" id="submit-button">
 		</form>
 	</div>
-	<div id="footer">
-		<div id="footer-box">
-		<table class="margin-left" id="footer-table" cellspacing="30px">
-			<tr>
-				<th><a href="index.html" title="Operation Military Inventory"><img src="images/page_logo2.png" id="logo"></a></th>
-				<th width="15%"><h2 class="footer-heading-align footer-heading-style"><a href="team.html" title="Team">Team</a></h2></th>
-				<th width="15%"><h2 class="footer-heading-align footer-heading-style">Links</h2></th>
-				<th><h2 class="margin-right footer-heading-align footer-heading-style">Newsletter</h2></th>
-			</tr>
-			<tr>
-				<td>
-					<p  id="footer-description">Indian Armed Forces are one of the best forces in the world. They house some of the latest and most leathal weapons from International as well as Domestic Companies.</p>
-				</td>
-				<td>
-					<ul class="footer-list">
-						<li class="list-item-style">&emsp;&ensp;Kartik</li>
-						<br>
-						<li class="list-item-style">&emsp;&ensp;Aman</li>
-						<br>
-						<li class="list-item-style">&emsp;&ensp;Ritinder</li>
-						<br>
-						<li class="list-item-style">&emsp;&ensp;Tejas</li>
-					</ul>
-				</td>
-				<td>
-					<ul class="footer-list">
-						<li class="list-item-style">&emsp;&ensp;<a href="index.html" title="Home">Home</a></li>
-						<br>
-						<li class="list-item-style">&emsp;&ensp;<a href="page.html" title="Contacts">Contact Us</a></li>
-						<br>
-						<br><br><br>
-						
-					</ul>
-				</td>
-				<td>
-					<div class="margin-right" id="form">
-						<form>
-							<img src="images/email.png">
-							<input type="email" placeholder="Enter your Email ID:" required>
-							<button type="submit"><img src="images/right-arrows.png" title="Submit"></i></button>
-						</form>
-					</div>
-					<div>
-						<ul class="footer-list">
-							<li class="social-icons">&emsp;&emsp;&emsp;<a href="#" title="Like Our Page!"><img src="images/facebook.png"></a></li>
-							<li class="social-icons"><a href="#" title="Follow Us on Twitter!"><img src="images/twitter.png"></a></li>
-							<li class="social-icons"><a href="#" title="Follow Us on Instagram!"><img src="images/instagram.png"></a></li>
-						</ul>
-					</div>
-				</td>
-			</tr>
-		</table>
-		<div>
-		<div id="footer-end-note">
-			<p>Made with <img src="images/heart.png"> in Bharat. <img src="images/india.png"></p>
-		</div>
-	</div>
+
+	<!-- footer starts -->
+    <div class="footer-box">
+        <div class="flex-container">
+            <div class="flex-item footer-description-section">
+                <div>
+                    <img src="images/page_logo2.png">
+                </div>
+                <div class="footer-description">
+                    <p>Indian Armed Forces are one of the best forces in the world. 
+                        They house some of the latest and most leathal weapons from International as well as Domestic Companies.
+                    </p>
+                </div>
+            </div>
+            <div class="flex-item team-section">
+                <div>
+                    <h2><a href="">TEAM</a></h2>
+                </div>
+                <div>
+                    <ul class="team-member-name">
+                        <li>Kartik</li>
+                        <li>Aman</li>
+                        <li>Ritinder</li>
+                        <li>Tejas</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-item links-section">
+                <div>
+                    <h2>LINKS</h2>
+                </div>
+                <div>
+                    <ul class="links-list">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-item newsletter-section">
+                <div>
+                    <h2>NEWSLETTER</h2>
+                </div>
+                <div>
+                    <form>
+                        <img src="images/email.png">
+                        <input type="email" placeholder="Enter your Email:">
+                        <button type="submit">
+                            <img src="images/right-arrows.png">
+                        </button>
+                    </form>
+                </div>
+                <div class="social-icons">
+                    <img src="images/facebook.png">
+                    <img src="images/twitter.png">
+                    <img src="images/instagram.png">
+                </div>
+            </div>
+        </div>
+        <div class="footer-note">
+            <p>Made with <img src="images/heart.png"> in Bharat. <img src="images/india.png"></p>
+        </div>
+    </div>
+    <!-- footer ends -->
 </body>
 </html>
