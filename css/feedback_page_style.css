@@ -32,6 +32,11 @@
     #feedback-box form{
         width:max-content;
     }
+    body{
+        background-image: url(../images/bg3-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
 }
 
 @media (min-width:600px) {
@@ -40,6 +45,11 @@
     }
     #feedback-box form{
         width: inherit;
+    }
+    body{
+        background-image: url(../images/bg3.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
     }
 }
 
@@ -122,11 +132,7 @@
 }
 
 /*nav bar ends*/
-body{
-	background-image: url(../images/bg3.jpg);
-	background-repeat: no-repeat;
-	background-size:cover;
-}
+
 
 #feedback-box{
 	margin:70px auto;
