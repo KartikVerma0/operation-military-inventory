@@ -37,6 +37,9 @@
     .container{
         background-image: url(../images/home-page-bg.jpg);
     }
+    .textbox{
+        padding-bottom: 8rem !important;
+    }
     
 }
 
@@ -61,7 +64,6 @@ html {
 .textbox{
     color: rgba(255, 0, 0, 0.815);
     margin: 8rem 0 0 3.125rem;
-    padding-bottom: 8rem;
 }
 
 .textbox p{
