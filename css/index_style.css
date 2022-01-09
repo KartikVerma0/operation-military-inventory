@@ -28,6 +28,9 @@
     .newsletter-section form input[type=email]{
         width: 100%;
     }
+    .textbox{
+        padding-bottom: 16rem !important;
+    }
 }
 
 @media (min-width:600px){
