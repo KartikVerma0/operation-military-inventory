@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+@media (max-width:600px) {
+    :root{
+        font-size:12px;
+    }
+    
+    .footer-description-section{
+        min-width: 100%;
+    }
+    .footer-description{
+        width: 70%;
+    }
+    .team-section{
+        width: 50%;
+    }
+    .links-section{
+        width: 50%S;
+    }
+    .newsletter-section{
+        width: 100%;
+    }
+    .newsletter-section form input[type=email]{
+        width: 100%;
+    }
+
+}
+
+*{
+    margin: 0vh;
+    padding:  0vh;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    color: white;
+    font-size: 100%;
+    
+}
+img{
+    width: 100%;
+    display: block;
+}
+
+
+/*--header starts---*/
+header{
+    min-height: 100vh;
+    background:url(../images/indian.jpg) center/cover no-repeat fixed;
+}
+
+.navbar{
+    background:rgba(253, 250, 249, 0.6) solid;
+    padding: 1.2rem;
+
+}
+
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.7rem;
+}
+
+.navbar-brand{
+    text-decoration: none;
+}
+
+.navbar-brand p{
+    color: white;
+    font-size: 4rem;
+    font-family: "Montserrat",sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.navbar-nav{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.navbar-nav a{
+    font-family: "roboto",sans-serif;
+    color: rgb(255, 30, 0);
+    letter-spacing: 3px;
+    text-decoration: none;
+    
+    
+}
+
+.sign-in-div{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar button{
+    height: 3.125rem;
+    width: 5.938rem;
+    border-radius: 3.125rem;
+    border-style: none;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: "poppins",sans-serif;
+    font-weight: bolder;
+}
+
+.navbar button:hover{
+    color: rgb(255, 30, 0);
+}
+
+.navbar .home{
+    color: white;
+    background-color: red;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: "poppins",sans-serif;
+    font-weight: bolder;
+}
+
+.navbar .home:hover{
+    background-color: #cf0000;
+}
+
+.navbar .feedback{
+    color: white;
+    background-color: darkblue;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: "poppins",sans-serif;
+    font-weight: bolder;
+}
+
+.navbar .feedback:hover{
+    background-color: #000070;
+}
+
+.navbar .contact{
+    color: white;
+    background-color: cyan;
+    padding: 10px;
+    border-radius: 50px;
+    font-family: "poppins",sans-serif;
+    font-weight: bolder;
+}
+
+.navbar .contact:hover{
+    background-color: #00d7d7;
+}
+
+
+
+.banner{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 40vh;
+}
+
+
+.banner p{
+    padding: 1rem 0 2rem 0;
+    text-transform: capitalize;
+    font-family: "heebo",sans-serif;
+    font-weight: 300;
+    word-spacing: 2px;
+
+}
+
+/*header ends*/
+
+.design{
+    margin: 50px;
+    padding: 0;
+    box-sizing: border-box;
+    float: left;
+}
+
+.title{
+    margin-bottom: 40px;
+}
+
+.title h2{
+    font-family: "Montserrat",sans-serif;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.design-content{
+    margin-bottom: 20px;
+}
+
+.design-item{
+    width: 90%;
+    border-bottom: 2px solid grey;
+    display: flex;
+    gap: 3.5rem;
+}
+
+.design-img{
+    width: 60%;
+    height: auto;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.design-img:hover{
+    width: 62%;
+    height: auto;
+}
+
+.headline{
+    width: 30%;
+    display: inline-block;
+}
+
+.headline a{
+    color: #00b762;
+    text-decoration: none;
+    font-family: "Montserrat",sans-serif;
+    display: block;
+    font-size: 1.2rem;
+    word-break: break-word;
+}
+
+.headline a:hover{
+    color: #00743e;
+}
+
+.headline span{
+    color: black;
+    display: block;
+    margin-top: 10px;
+}
