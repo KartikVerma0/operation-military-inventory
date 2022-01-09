@@ -28,22 +28,16 @@
     .newsletter-section form input[type=email]{
         width: 100%;
     }
-    .textbox{
-        padding-bottom: 16rem !important;
-    }
 }
 
 @media (min-width:600px){
     .container{
         background-image: url(../images/home-page-bg.jpg);
     }
-    .textbox{
-        padding-bottom: 8rem !important;
-    }
     
 }
 
-*{    margin: 0px;
+*{  margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
@@ -55,7 +49,7 @@ html {
 
 .container{
     width: 100%;
-    height: max(100vh,fit-content);
+    min-height:100vh;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -63,7 +57,13 @@ html {
 
 .textbox{
     color: rgba(255, 0, 0, 0.815);
-    margin: 8rem 0 0 3.125rem;
+    margin: 8rem 0 0 3.125rem;   
+    padding-bottom: 4rem; 
+}
+
+.textbox:after{
+    content: "";
+    clear: both;
 }
 
 .textbox p{
