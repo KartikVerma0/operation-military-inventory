@@ -269,7 +269,9 @@
     z-index: 1;
 }
 
-
+.right-column-equipment-info{
+    margin-left: -10rem !important;
+}
 
 
 
