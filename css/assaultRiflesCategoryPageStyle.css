@@ -168,7 +168,7 @@
     display: none;
     background-color: rgba(0,0,0,0.6);
     color: white;
-    box-shadow: 0px 0px 4px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.5);
     border-radius: 5px;
     backdrop-filter: blur(10px);
 }
@@ -207,6 +207,14 @@
     margin-top: 35rem;
     margin-left: 10rem;
     z-index: 1;
+}
+
+.right-column-equipment-info{
+    margin-left: -10rem !important;
+}
+
+.bottom-row-equipment-info{
+    margin-top: -25rem !important;
 }
 
 .individual-equipments{
