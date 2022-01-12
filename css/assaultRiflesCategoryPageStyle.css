@@ -3,6 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+/* fade in animation */
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+
 @media (max-width:600px) {
     :root{
         font-size:12px;
@@ -243,6 +254,8 @@
     z-index: 1;
     top: 11rem;
     left: 0;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
 }
 
 .individual-equipments{
@@ -317,6 +330,8 @@
     z-index: 1;
     top: 11rem;
     right: 0;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
 }
 
 .equipment-info-bottom{
@@ -362,6 +377,8 @@
     z-index: 1;
     bottom: 11rem;
     left: 0;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
 }
 
 .equipment-info-bottom-right{
@@ -407,6 +424,8 @@
     z-index: 1;
     bottom: 11rem;
     right: 0;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;
 }
 
 
