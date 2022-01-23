@@ -6,12 +6,14 @@
 
 /* fade in animation */
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+    0% { opacity: 0; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 @media (max-width:600px) {
@@ -204,6 +206,7 @@
 
 .page-heading h1{
     font-family: "poppins",sans-serif;
+    font-style: normal;
     font-weight: 900;
     color: black;
     font-size: 3.5rem;
@@ -312,8 +315,8 @@
     z-index: 1;
     top: 11rem;
     left: 0;
-    -webkit-animation: fadeIn 0.3s;
-    animation: fadeIn 0.3s;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
 .equipment-info-right{
@@ -359,8 +362,8 @@
     z-index: 1;
     top: 11rem;
     right: 0;
-    -webkit-animation: fadeIn 0.3s;
-    animation: fadeIn 0.3s;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
 .equipment-info-bottom{
@@ -406,8 +409,8 @@
     z-index: 1;
     bottom: 11rem;
     left: 0;
-    -webkit-animation: fadeIn 0.3s;
-    animation: fadeIn 0.3s;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
 .equipment-info-bottom-right{
@@ -453,8 +456,8 @@
     z-index: 1;
     bottom: 11rem;
     right: 0;
-    -webkit-animation: fadeIn 0.3s;
-    animation: fadeIn 0.3s;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
 }
 
 
