@@ -56,10 +56,23 @@ html {
 }
 
 .textbox{
-    color: rgba(255, 0, 0, 0.815);
+    color: rgba(255, 0, 0, 1);
     margin: 8rem 0 0 3.125rem;   
     padding-bottom: 4rem; 
+    display: flex;
+    flex-direction: column;
 }
+
+@media (max-width:600px) {
+    .textbox{
+        align-items: center;
+        margin-left: 0;
+    }
+    .textbox>*{
+        text-align: center;
+    }
+}
+
 
 .textbox:after{
     content: "";
