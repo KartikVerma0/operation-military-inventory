@@ -281,7 +281,7 @@
 
 .individual-equipments > a img {
     flex-shrink: 1;
-    max-width: 200px;
+    max-width: 12rem;
     border-radius: 1rem;
     filter: drop-shadow(1.928px 2.298px 3px rgba(0, 0, 0, 0.56));
 }
