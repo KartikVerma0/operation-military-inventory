@@ -253,6 +253,13 @@
     gap: 5rem;
 }
 
+@media screen and (min-width: 600px) and (max-width: 1270px) {
+    .equipments-main-container-div {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
 .individual-equipments {
     min-width: max(20%, 240px);
     height: 11rem;
