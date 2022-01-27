@@ -1,0 +1,386 @@
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap");
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 12px;
+    }
+
+    .footer-description-section {
+        min-width: 100%;
+    }
+    .footer-description {
+        width: 70%;
+    }
+    .team-section {
+        width: 50%;
+    }
+    .links-section {
+        width: 50%;
+    }
+    .newsletter-section {
+        width: 100%;
+    }
+    .newsletter-section form input[type="email"] {
+        width: 100%;
+    }
+    .equipment-category-box {
+        align-items: center;
+    }
+    .equipments-main-container-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipment-info {
+        width: 240px;
+    }
+    .equipment-info-right {
+        width: 240px;
+    }
+    .equipment-info-bottom {
+        width: 240px;
+    }
+    .equipment-info-bottom-right {
+        width: 240px;
+    }
+    .equipment-info img {
+        width: 240px;
+    }
+    .equipment-info-right img {
+        width: 240px;
+    }
+    .equipment-info-bottom img {
+        width: 240px;
+    }
+    .equipment-info-bottom-right img {
+        width: 240px;
+    }
+}
+
+@media (min-width: 600px) {
+    .equipment-category-box {
+        align-items: flex-start;
+    }
+    .equipment-info {
+        width: 400px;
+    }
+    .equipment-info-right {
+        width: 400px;
+    }
+    .equipment-info-bottom {
+        width: 400px;
+    }
+    .equipment-info-bottom-right {
+        width: 400px;
+    }
+
+    .equipment-info img {
+        min-width: 400px;
+    }
+    .equipment-info-right img {
+        min-width: 400px;
+    }
+    .equipment-info-bottom img {
+        min-width: 400px;
+    }
+    .equipment-info-bottom-right img {
+        min-width: 400px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(240, 240, 240);
+    font-family: "poppins", sans-serif;
+}
+/*nav bar starts*/
+.navbar {
+    background-color: black;
+    min-height: max-content;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.5rem 0;
+}
+
+.nav-image {
+    width: 8rem;
+    height: auto;
+    float: left;
+}
+
+.nav-logo {
+    font-size: 2.5rem;
+    font-family: "bakbak one", sans-serif;
+    color: white;
+    width: max-content;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.nav-links a {
+    color: white;
+    font-size: 1.063rem;
+    font-family: "roboto", sans-serif;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.nav-links > a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.sign-button {
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    border-style: none;
+    padding-top: 0.2rem;
+    cursor: pointer;
+    width: 5.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.sign-button h3 {
+    color: black;
+    font-size: 2rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+
+/*nav bar ends*/
+
+.primary-heading {
+    font-family: "poppins", sans-serif;
+    font-weight: 900;
+    font-size: clamp(4rem, 5vw, 8rem);
+}
+
+.primary-heading + p {
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    color: #4a4a4a;
+    font-size: clamp(1rem, 1vw, 2rem);
+    text-align: justify;
+}
+
+.section:nth-child(2n-1) {
+    background-color: #2a2a2a;
+}
+
+.secondary-heading {
+    font-family: "poppins", sans-serif;
+    font-size: clamp(2.5rem, 3.5vw, 6rem);
+    font-weight: 800;
+    color: #b4b4b4;
+}
+
+.column-width {
+    column-width: 8rem;
+    color: #b4b4b4;
+}
+
+.black-background {
+    background-color: black;
+}
+
+.rounded-border {
+    border-radius: 1rem;
+}
+
+.white-box-shadow {
+    box-shadow: 1rem 1rem 0px white;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*footer starts*/
+.footer-box {
+    width: 100%;
+    height: max-content;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 100px;
+    position: relative;
+    bottom: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid grey;
+    direction: row;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.flex-item {
+    text-align: justify;
+}
+
+.footer-description-section {
+    width: 50%; /* width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-description-section img {
+    width: 15rem;
+}
+
+.footer-description {
+    text-align: justify;
+    font-family: "roboto", sans-serif;
+    font-weight: lighter;
+    width: 100%;
+}
+
+.team-section {
+    width: min-content;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.team-section h2 {
+    text-decoration: none;
+    color: white;
+}
+
+.team-section h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.team-section ul {
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.team-section li {
+    margin-top: 0.7rem;
+}
+
+.links-section {
+    width: min-content;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.links-section ul {
+    list-style-type: none;
+}
+
+.links-section li {
+    margin-top: 0.7rem;
+}
+
+.links-section li a {
+    text-decoration: none;
+    color: white;
+}
+.newsletter-section {
+    width: max-content;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.7rem;
+}
+
+.newsletter-section form input[type="email"] {
+    background-color: transparent;
+    border-style: none;
+    width: 50%;
+    height: 1.5rem;
+    margin-top: 10px;
+    border-bottom: 1px solid grey;
+    color: grey;
+}
+
+.newsletter-section form input[type="email"]:focus {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.newsletter-section form button {
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.newsletter-section .social-icons img {
+    cursor: pointer;
+}
+
+.footer-box .footer-note {
+    text-align: center;
+}
+
+.footer-note p {
+    font-family: "roboto", sans-serif;
+    font-weight: lighter;
+}
+
+.team-member-name {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+.team-member-name li {
+    font-family: "roboto", sans-serif;
+    font-weight: lighter;
+}
+
+.links-list li {
+    font-family: "roboto", sans-serif;
+    font-weight: lighter;
+}
+
+.flex-item h2 {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+}
+
+/*footer ends*/
