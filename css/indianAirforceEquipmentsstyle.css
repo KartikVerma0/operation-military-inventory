@@ -252,6 +252,13 @@
     gap: 5rem;
 }
 
+@media screen and (min-width: 600px) and (max-width: 1270px) {
+    .equipments-main-container-div {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
 .individual-equipments {
     min-width: max(20%, 240px);
     height: 11rem;
@@ -335,6 +342,12 @@
     animation: fadeIn 1s;
 }
 
+@media screen and (max-width: 1270px) {
+    .individual-equipments:hover .equipment-info {
+        display: none;
+    }
+}
+
 .equipment-info-right {
     display: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -380,6 +393,12 @@
     right: 0;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+}
+
+@media screen and (max-width: 1270px) {
+    .individual-equipments:hover .equipment-info-right {
+        display: none;
+    }
 }
 
 .equipment-info-bottom {
@@ -429,6 +448,12 @@
     animation: fadeIn 1s;
 }
 
+@media screen and (max-width: 1270px) {
+    .individual-equipments:hover .equipment-info-bottom {
+        display: none;
+    }
+}
+
 .equipment-info-bottom-right {
     display: none;
     background-color: rgba(0, 0, 0, 0.6);
@@ -474,6 +499,12 @@
     right: 0;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
+}
+
+@media screen and (max-width: 1270px) {
+    .individual-equipments:hover .equipment-info-bottom-right {
+        display: none;
+    }
 }
 
 .see-more-btn {
