@@ -108,7 +108,7 @@ html {
 .textbox h3 {
     font-size: 2.5rem;
     font-weight: 400;
-    font-family: "roboto", sans-serif;
+    font-family: "poppins", sans-serif;
 }
 
 .explorebutton .btn {
@@ -161,7 +161,7 @@ html {
 .nav_bar button {
     width: 6.25rem;
     height: 3.125rem;
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
     border-radius: 50px;
     border-style: none;
     cursor: pointer;
