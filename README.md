@@ -10,19 +10,10 @@ File Structure:
 flowchart LR
 
 Repository-->css(css) & images(images) & js(js)
-Repository-..->insas("1b1 insas.html")
-Repository-..->CombatAircraftPage("CombatAircraftCategoryPage.html")
-Repository-..->HelicopterCategoryPage("HelicopterCategoryPage.html")
-Repository-..->TrainerAircraftCategoryPage("TrainerAircraftCategoryPage.html")
-Repository-..->AK47("ak-47.html")
-Repository-..->assaultRifleCategoryPage("AssaultRifleCategoryPage.html")
-Repository-.->BlogPage("BlogPage.html")
-Repository-.->ContactPage("contact_Page.html")
-Repository-.->FeedbackPage("feedback_Page.html")
-Repository-.->index("index.html")
-Repository==>indianAirforceEquipments("indianAirforceEquipments.html")
-Repository==>indianArmyEquipments("indianArmyEquipments.html")
-Repository==>indianNavyEquipments("indianNavyEquipments.html")
-Repository-.->SignInPage("sign_in_Page.html")
-Repository-.->TeamPage("team.html")
+Repository-...->insas("1b1 insas.html") & AK47("ak-47.html")
+Repository-..->CombatAircraftPage("CombatAircraftCategoryPage.html") & HelicopterCategoryPage("HelicopterCategoryPage.html") & TrainerAircraftCategoryPage("TrainerAircraftCategoryPage.html") & assaultRifleCategoryPage("AssaultRifleCategoryPage.html") & TransportCategoryPage("TransportCategoryPage.html")
+Repository-.->BlogPage("BlogPage.html") & ContactPage("contact_Page.html") & FeedbackPage("feedback_Page.html") & index("index.html") & SignInPage("sign_in_Page.html") & TeamPage("team.html")
+Repository==>indianAirforceEquipments("indianAirforceEquipments.html") & indianArmyEquipments("indianArmyEquipments.html") & indianNavyEquipments("indianNavyEquipments.html")
+
+css-->Insas("1b1 insas.css") & combatAircraftPage("CombatAircraftCategoryPage.css") & helicopterCategoryPage("HelicopterCategoryPage.css") & trainerAircraftCategoryPage("TrainerAircraftCategoryPage.css") &  transportCategoryPage("TransportCategoryPage.css") & aK47("ak-47 style.css") & AssaultRifleCategoryPage("AssaultRifleCategoryPage.css") & blogPage("Blog.css") & contactPage("contact_style.css") & feedbackPage("feedback_Page_style.html") & Index("index_style.css") & IndianAirforceEquipments("indianAirforceEquipmentsstyle.css") & IndianArmyEquipments("indianArmyEquipmentsstyle.css") & IndianNavyEquipments("indianNavyEquipmentsstyle.css") & signInPage("sign_in_style.css") & teamPage("team_style.css")
 ```
